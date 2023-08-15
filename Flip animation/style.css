@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/7134986/pexels-photo-7134986.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7134986.jpg&fm=jpg");
+}
+
+.main h1 {
+    color: white;
+    font-size: 7vh;
+}
+
+.span {
+    color: red;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+.common1 {
+    background-color: palevioletred;
+    height: 5rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common2 {
+    background-color: blue;
+    height: 5rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    margin-top: 7rem;
+}
+
+.right {
+    margin-left: 4rem;
+    margin-top: 9rem;
+
+}
+
+.top1 {
+    border-radius: 0 30px 0 0;
+    /* margin-bottom: 1rem; */
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom1 {
+    border-radius: 0 0 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.top2 {
+    border-radius: 30px 0 0 0;
+    /* margin-bottom: 1rem; */
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom2 {
+    border-radius: 0 0 30px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.single-service {
+    text-align: center;
+    border-radius: center;
+    height: 5rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+.moving {
+    background-color: var(--color);
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    visibility: hidden;
+    transition: 0.3s ease-in;
+    width: 100%;
+}
+
+.moving-service-desc {
+    left: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, 100%);
+    transition: 0.5s;
+    width: 100%;
+}
+
+.single-service:hover .moving {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-service:hover .moving-service-desc {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 786px){
+    .main h1 {
+        font-size: 5vh;
+    }
+    .common1, .common2 {
+        width: 100%;
+    }
+    
+    .left,
+    .right {
+      text-align: center;
+      padding: 0;
+    }
+
+    .single-service {
+        width: 100%;
+    }
+    
+}
