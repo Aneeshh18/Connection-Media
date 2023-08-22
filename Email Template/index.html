@@ -17,12 +17,10 @@
       }
 
       .container {
-        /* background-color: rgb(232, 175, 175); */
         position: absolute;
         top: 18%;
         width: 70%;
         left: 15%;
-        /* padding: 50px; */
       }
 
       .container p {
@@ -110,23 +108,45 @@
 
       .link {
         color: blue;
+        font-weight: bold;
       }
 
       @media (max-width: 768px) {
+        .bottom-top-image,
+        .bottom-bottom-image {
+          display: none;
+        }
         .container {
           width: 90%;
           left: 5%;
         }
         .container .top h1 {
-          font-size: 24px;
+          font-size: 16px;
+          line-height: 1.2;
+        }
+        .container .bottom h3 {
+          font-size: 16px;
+          line-height: 1.2;
         }
         .container .top img {
           height: 7rem;
+        }
+        .container .bottom p {
+          font-size: 16px;
+        }
+        .container .bottom {
+          padding: 2.5rem;
         }
         .bottom-top,
         .bottom-bottom {
           flex-direction: column;
           align-items: center;
+        }
+        .bottom-bottom .bottom-bottom-body p {
+          font-size: 10px;
+        }
+        .bottom-top .bottom-top-body p {
+          font-size: 10px;
         }
         .bottom-top .bottom-top-body,
         .bottom-bottom .bottom-bottom-body {
@@ -135,6 +155,19 @@
         }
         .bottom-top .bottom-top-body h1 {
           font-size: 22px;
+        }
+        .bottom-bottom .bottom-bottom-body h1 {
+          font-size: 22px;
+        }
+        .bottom-top .bottom-top-body p {
+          font-size: 14px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+        }
+        .bottom-bottom .bottom-bottom-body p {
+          font-size: 14px;
+          padding-top: 6px;
+          padding-bottom: 6px;
         }
         .bottom-top .bottom-top-body button,
         .bottom-bottom .bottom-bottom-body button {
@@ -174,7 +207,7 @@
           <br />
           But wait a minute!🖐🏻 We're just missing one tiny thing to get you
           soaring high in your job search🔍 - verifying your email address ✅.
-          No worries, it's as easy as nailing a high-five!✋🏻
+          No worries,it's easy as nailing a high-five!✋🏻
           <br /><br /><br />
           Just follow these quick peasy steps:
           <br /><br /><br />
@@ -183,8 +216,7 @@
           <div class="bottom-top-body">
             <h1>STEP 1</h1>
             <p>
-              Click on this super-duper link or copy- <br />paste it into your
-              browser:👇🏻
+              Click on this super-duper link or copy paste it into your browser:👇🏻
             </p>
             <p>
               <button>Verify</button>
